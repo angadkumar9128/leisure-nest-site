@@ -61,7 +61,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Café-specific colors using design system
+				coffee: {
+					dark: 'hsl(var(--coffee-dark))',
+					medium: 'hsl(var(--coffee-medium))',
+					light: 'hsl(var(--coffee-light))'
+				},
+				cream: 'hsl(var(--cream))',
+				'warm-beige': 'hsl(var(--warm-beige))',
+				golden: {
+					DEFAULT: 'hsl(var(--golden))',
+					light: 'hsl(var(--golden-light))'
 				}
+			},
+			backgroundImage: {
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-golden': 'var(--gradient-golden)',
+				'gradient-cream': 'var(--gradient-cream)'
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'golden': 'var(--shadow-golden)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

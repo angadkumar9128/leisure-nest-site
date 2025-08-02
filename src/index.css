@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Café Design System - Warm, inviting colors inspired by coffee and comfort */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - warm cream and rich coffee tones */
+    --background: 35 20% 97%;
+    --foreground: 25 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards with subtle warmth */
+    --card: 35 25% 98%;
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popovers with cream background */
+    --popover: 35 25% 98%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - rich coffee brown */
+    --primary: 25 35% 25%;
+    --primary-foreground: 35 30% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - warm beige */
+    --secondary: 35 25% 88%;
+    --secondary-foreground: 25 35% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 12% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - warm golden amber */
+    --accent: 40 85% 65%;
+    --accent-foreground: 25 35% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive with warmth */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 35 30% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs with subtle warmth */
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 40 85% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom café design tokens */
+    --coffee-dark: 20 40% 20%;
+    --coffee-medium: 25 35% 35%;
+    --coffee-light: 30 25% 65%;
+    --cream: 35 30% 95%;
+    --warm-beige: 35 25% 88%;
+    --golden: 40 85% 65%;
+    --golden-light: 40 70% 80%;
+    
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--coffee-medium)), hsl(var(--coffee-dark)));
+    --gradient-golden: linear-gradient(135deg, hsl(var(--golden)), hsl(var(--golden-light)));
+    --gradient-cream: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--warm-beige)));
+    
+    /* Shadows with warmth */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--coffee-dark) / 0.2);
+    --shadow-golden: 0 5px 20px -5px hsl(var(--golden) / 0.3);
 
     --sidebar-background: 0 0% 98%;
 
